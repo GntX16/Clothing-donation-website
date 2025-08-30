@@ -1,5 +1,5 @@
 
-// Bootstrap Burger-Menü automatisch schließen nach Klick auf Link
+// Bootstrap Burger-Menü automatisch schließen nach Klick auf Link Quelle: Github Copilot
 document.addEventListener('DOMContentLoaded', function() {
   var navbarCollapse = document.getElementById('navbarNav');
   var navLinks = navbarCollapse.querySelectorAll('.nav-link');

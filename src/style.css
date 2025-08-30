@@ -29,22 +29,61 @@ body {
     }
 }
 /*Media Queries*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     header h1 {
         font-size: 24px;
     }
     p.hero-titel {
         font-size: 30px;
     }
+    .hero-titel2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    #comment {
+        width: 280px;
+    }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     #ueberuns p {
         font-size: 19px;
     }
     #herop2 {
         font-size: 17px;
     }
+    .hero-titel2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .form-vorort {
+        font-size: 18px;
+    }
+    .form-abholen {
+        font-size: 18px;
+    }
+    #comment {
+        width: 400px;
+    }
 }
+@media (min-width: 1024px) {
+    .form-vorort {
+        font-size: 23px;
+    }
+    .form-abholen {
+        font-size: 23px;
+    }
+    #herop2 {
+        font-size: 17px;
+    }
+    .hero-titel2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+
+}
+
+
 
 /* Header */
 h1 {
@@ -136,7 +175,6 @@ ul.navbar-nav li a { /*Schrift und Farbe der Nacigationen*/
 
 }
 
-
 #ueberuns {
     animation: fade-up 1.7s;
     background-image: linear-gradient(to right, #001F54, #5e78a7); /*Für ein schönes Farbenverlauf*/
@@ -145,10 +183,6 @@ ul.navbar-nav li a { /*Schrift und Farbe der Nacigationen*/
     margin: 20px;
     border-radius: 30px;
 }
-
-
-
-
 
 /*Footer*/
 footer {
@@ -166,6 +200,34 @@ footer {
 
 .footer-icon {
     width: 30px;
+}
+
+
+/* abgabeVorOrt.html*/
+#vorort {
+    background-image: linear-gradient(to right, #001F54, #5e78a7);
+    color: white;
+    padding: 5%;
+    margin: 20px;
+    border-radius: 30px;
+}
+#vorort p{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+/* abholenLassen.html*/
+#abholen {
+    background-image: linear-gradient(to right, #001F54, #5e78a7);
+    color: white;
+    padding: 5%;
+    margin: 20px;
+    border-radius: 30px;
+}
+#abholen p{
+    font-size: 19px;
+    font-weight: 500;
 }
 
 

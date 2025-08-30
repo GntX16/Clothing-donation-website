@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Hussin H." />
+    <meta name="description"
+      content="Diese ist eine Webseite einer imaginären Kleiderspendeorganisation."/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="../img/TabLogo.png" />
+    <title>Himmelssterne</title>
+  </head>
+
+  <body>
+    <header>
+      <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/MainLogo.png" width="70px"></a>
+            <h1>Himmelssterne</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Startseite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section id="vorort">
+        <p>Sie können die Registrierung entweder zuhause oder an einem Tablet in einer unseren Geschäftsstelle anfertigen. <br>Falls Sie die Registrierung zuhause machen, bitten wir Sie, die Bestätigung vorzuzeigen. <br> Vielen Dank :)</p>
+        <form class="form-vorort">
+            <div>
+                <label>Art der Kleidung: *</label> <br>
+                <input type="checkbox" id="jacke" name="kleidung" value="Jacke">
+                <label for="jacke">Jacke</label> <br>
+                <input type="checkbox" id="hose" name="kleidung" value="Hose">
+                <label for="hose">Hose</label> <br>
+                <input type="checkbox" id="shirt" name="kleidung" value="Shirt">
+                <label for="shirt">Shirt</label> <br>
+                <input type="checkbox" id="schuhe" name="kleidung" value="Schuhe">
+                <label for="schuhe">Schuhe</label> <br>
+                <input type="checkbox" id="muetze" name="kleidung" value="Mütze">
+                <label for="muetze">Mütze</label> <br>
+                <input type="checkbox" id="sonstiges" name="kleidung" value="Sonstiges">
+                <label for="sonstiges">Sonstiges (Bitte in "Bemerkungen" nennen)</label> <br>
+            </div> <br>
+            <label> Kriesengebiet *</label> <br>
+            <select> 
+                <option id="dropfeld-op" value="" disabled selected> Kriesengebiet auswählen</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Iran">Iran</option>
+                <option value="Südafrika">Südafrika</option>
+                <option value="Syrien">Syrien</option>
+                <option value="Ukraine">Ukraine</option>
+            </select>
+            
+            <br> <br><label for="notiz">Bemerkung:</label> <br>
+            <textarea id="comment" rows="4" cols="50" placeholder="Bemerkungen hier einfügen"></textarea>
+            <br>
+            <button id="bestaetigen" type="button">Eingabe bestätigen</button> 
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Clothing Donation Website. Alle Rechte vorbehalten.</p>
+                    <ul id="footer-ul">
+                        <li><a href="impressumUndDatenschutz.html" targrt="_blank"> Impressum </a></li>
+                        <li><a href="impressumUndDatenschutz.html" target="_blank"> Datenschutz </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p><b>Kontaktieren Sie uns</b></p>
+                    <p> <img src="../img/location.png" class="footer-icon"> Musterstraße 16, 20077 Hamburg</p>
+                    <p> <img src="../img/mail.png" class="footer-icon"> maxmustermann16@gmail.com</p>
+                    <p> <img src="../img/phone-call.png" class="footer-icon"> 0176 - 65456421370</p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vorort.js"></script>
+  </body>
+</html>
