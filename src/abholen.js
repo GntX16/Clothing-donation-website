@@ -59,13 +59,19 @@ document.getElementById("bestaetigen").onclick = function () {
   const kriesengebiet = document.querySelector("#detailsForm select").value;
   //bemerkung
   const bemerkung = document.getElementById("comment").value;
+  
   // Heutiges Datum und Uhrzeit
   const jetzt = new Date();
   const datum = jetzt.toLocaleDateString();
   const uhrzeit = jetzt.toLocaleTimeString();
-  // ausgabe als Alert
-  alert(
-    "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:" +
+  
+     // Prüfung: Alle Felder müssen ausgefüllt sein, mindestens eine Kleiderart gewählt
+  if (!adresse || kleidung.length === 0 || !kriesengebiet) {
+    alert("Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.");
+    return;
+  } else {
+    alert(
+    "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:\n" +
       "Kleidung: " +
       kleidung +
       "\n" +
@@ -79,10 +85,8 @@ document.getElementById("bestaetigen").onclick = function () {
       datum +
       "\n" +
       "Uhrzeit: " +
-      uhrzeit +
-      "\n" +
-      "Adresse: " +
-      adresse
+      uhrzeit
   );
   window.location.href = "index.html";
+  }
 };

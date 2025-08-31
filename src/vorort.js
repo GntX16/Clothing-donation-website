@@ -27,7 +27,12 @@ document.getElementById("bestaetigen").onclick = function () {
   const jetzt = new Date();
   const datum = jetzt.toLocaleDateString();
   const uhrzeit = jetzt.toLocaleTimeString();
-  alert(
+
+  if (kleidung.length === 0 || !kriesengebiet) {
+    alert("Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.");
+    return;
+  } else {
+    alert(
     "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:\n" +
       "Kleidung: " +
       kleidung +
@@ -45,4 +50,5 @@ document.getElementById("bestaetigen").onclick = function () {
       uhrzeit
   );
   window.location.href = "index.html";
+  }
 };
