@@ -1,3 +1,5 @@
+// SweetAlert wird über das Script-Tag in der HTML-Datei eingebunden
+
 document.addEventListener("DOMContentLoaded", function () {
   var navbarCollapse = document.getElementById("navbarNav");
   var navLinks = navbarCollapse.querySelectorAll(".nav-link");
@@ -32,23 +34,18 @@ document.getElementById("bestaetigen").onclick = function () {
     alert("Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.");
     return;
   } else {
-    alert(
-    "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:\n" +
-      "Kleidung: " +
-      kleidung +
-      "\n" +
-      "Kriesengebiet: " +
-      kriesengebiet +
-      "\n" +
-      "Bemerkung: " +
-      bemerkung +
-      "\n" +
-      "Datum: " +
-      datum +
-      "\n" +
-      "Uhrzeit: " +
-      uhrzeit
-  );
-  window.location.href = "index.html";
+    swal(
+      "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:\n" +
+        "Kleidung: " + kleidung + "\n" +
+        "Kriesengebiet: " + kriesengebiet + "\n" +
+        "Bemerkung: " + bemerkung + "\n" +
+        "Datum: " + datum + "\n" +
+        "Uhrzeit: " + uhrzeit,
+      {
+        icon: "success",
+      }
+    ).then(function () {
+      window.location.href = "index.html";
+    });
   }
 };
