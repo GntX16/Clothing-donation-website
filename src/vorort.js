@@ -29,9 +29,10 @@ document.getElementById("bestaetigen").onclick = function () {
   const jetzt = new Date();
   const datum = jetzt.toLocaleDateString();
   const uhrzeit = jetzt.toLocaleTimeString();
+  const standort = document.getElementById("standort").value;
 
-  if (kleidung.length === 0 || !kriesengebiet) {
-    alert("Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.");
+  if (kleidung.length === 0 || !kriesengebiet || !standort) {
+    alert("Bitte füllen Sie alle Felder aus, wählen Sie mindestens eine Kleiderart und ermitteln Sie Ihren Standort.");
     return;
   } else {
     swal(
@@ -39,6 +40,7 @@ document.getElementById("bestaetigen").onclick = function () {
         "Kleidung: " + kleidung + "\n" +
         "Kriesengebiet: " + kriesengebiet + "\n" +
         "Bemerkung: " + bemerkung + "\n" +
+        "Standort: " + standort + "\n" +
         "Datum: " + datum + "\n" +
         "Uhrzeit: " + uhrzeit,
       {
