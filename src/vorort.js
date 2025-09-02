@@ -32,7 +32,9 @@ document.getElementById("bestaetigen").onclick = function () {
   const standort = document.getElementById("standort").value;
 
   if (kleidung.length === 0 || !kriesengebiet || !standort) {
-    alert("Bitte füllen Sie alle Felder aus, wählen Sie mindestens eine Kleiderart und ermitteln Sie Ihren Standort.");
+    swal("Bitte füllen Sie alle Felder aus, wählen Sie mindestens eine Kleiderart und ermitteln Sie Ihren Standort.", {
+      icon: "error",
+    });
     return;
   } else {
     swal(

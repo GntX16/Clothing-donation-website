@@ -42,10 +42,13 @@ document.getElementById("pruefen").onclick = function () {
     document.getElementById("pruefen").disabled = true;
     document.getElementById("plz").disabled = true;
   } else {
-    alert(
-      "Leider ist keine Geschäftsstelle in der Nähe Ihrer eingegebenen Adresse :("
-    );
-    window.location.href = "index.html";
+    swal({
+      text: "Leider ist keine Geschäftsstelle in der Nähe Ihrer eingegebenen Adresse :(",
+      icon: "error",
+      }
+      ).then(function () { //Problem reporten
+      window.location.href = "index.html";
+    });
   }
 };
 
@@ -58,7 +61,7 @@ document.getElementById("bestaetigen").onclick = function () {
   const kleidung = Array.from(
     document.querySelectorAll('#detailsForm input[type="checkbox"]:checked')).map((cb) => cb.value).join(", "); //Zeile aus Github Copilot übernommen
   //Kriesengebiet
-  const kriesengebiet = document.querySelector("#detailsForm select").value;
+  const krisengebiet = document.querySelector("#detailsForm select").value;
   //bemerkung
   const bemerkung = document.getElementById("comment").value;
   
@@ -68,15 +71,18 @@ document.getElementById("bestaetigen").onclick = function () {
   const uhrzeit = jetzt.toLocaleTimeString();
   
      // Prüfung: Alle Felder müssen ausgefüllt sein, mindestens eine Kleiderart gewählt
-  if (!adresse || kleidung.length === 0 || !kriesengebiet) {
-    alert("Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.");
+  if (!adresse || kleidung.length === 0 || !krisengebiet) {
+    swal({
+      text: "Bitte füllen Sie alle Felder aus und wählen Sie mindestens eine Kleiderart.",
+      icon: "error"
+    });
     return;
   } else {
     swal(
       "Vielen Dank für Ihre Spende. Hier ist die Eingabebestätigung:\n" +
         "Adresse: " + adresse + "\n" +
         "Kleidung: " + kleidung + "\n" +
-        "Kriesengebiet: " + kriesengebiet + "\n" +
+        "Krisengebiet: " + krisengebiet + "\n" +
         "Bemerkung: " + bemerkung + "\n" +
         "Datum: " + datum + "\n" +
         "Uhrzeit: " + uhrzeit,
