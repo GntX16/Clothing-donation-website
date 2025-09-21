@@ -50,24 +50,28 @@
         <p>Sie können die Registrierung entweder zuhause oder an einem Tablet in einer unseren Geschäftsstelle anfertigen.
         <br>Falls Sie die Registrierung zuhause machen, bitten wir Sie, die Bestätigung vorzuzeigen. <br> Vielen Dank :)</p>
         <form class="form-vorort">
-            <div>
-                <label>Art der Kleidung: *</label> <br>
-                <input type="checkbox" id="jacke" name="kleidung" value="Jacke">
-                <label for="jacke">Jacke</label> <br>
-                <input type="checkbox" id="hose" name="kleidung" value="Hose">
-                <label for="hose">Hose</label> <br>
-                <input type="checkbox" id="shirt" name="kleidung" value="Shirt">
-                <label for="shirt">Shirt</label> <br>
-                <input type="checkbox" id="schuhe" name="kleidung" value="Schuhe">
-                <label for="schuhe">Schuhe</label> <br>
-                <input type="checkbox" id="muetze" name="kleidung" value="Mütze">
-                <label for="muetze">Mütze</label> <br>
-                <input type="checkbox" id="sonstiges" name="kleidung" value="Sonstiges">
-                <label for="sonstiges">Sonstiges (Bitte in "Bemerkungen" nennen)</label> <br>
-            </div> <br>
-            <label> Kriesengebiet *</label> <br>
+      <div>
+        <label>Art der Kleidung: *</label> <br>
+        <input type="checkbox" id="jacke" name="kleidung" value="Jacke">
+        <label for="jacke">Jacke</label> <br>
+        <input type="checkbox" id="hose" name="kleidung" value="Hose">
+        <label for="hose">Hose</label> <br>
+        <input type="checkbox" id="shirt" name="kleidung" value="Shirt">
+        <label for="shirt">Shirt</label> <br>
+        <input type="checkbox" id="schuhe" name="kleidung" value="Schuhe">
+        <label for="schuhe">Schuhe</label> <br>
+        <input type="checkbox" id="muetze" name="kleidung" value="Mütze">
+        <label for="muetze">Mütze</label> <br>
+        <input type="checkbox" id="sonstiges" name="kleidung" value="Sonstiges">
+        <label for="sonstiges">Sonstiges (Bitte in "Bemerkungen" nennen)</label> <br>
+      </div> <br>
+      <div>
+        <label for="standort">Ihr aktueller Standort:</label><br>
+        <input type="text" id="standort" name="standort" placeholder="Filiale in ...">
+      </div> <br>
+            <label> Krisengebiet *</label> <br>
             <select> 
-                <option id="dropfeld-op" value="" disabled selected> Kriesengebiet auswählen</option>
+                <option id="dropfeld-op" value="" disabled selected> Krisengebiet auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Ghana">Ghana</option>
                 <option value="Iran">Iran</option>
@@ -75,7 +79,6 @@
                 <option value="Syrien">Syrien</option>
                 <option value="Ukraine">Ukraine</option>
             </select>
-            
             <br> <br><label for="notiz">Bemerkung:</label> <br>
             <textarea id="comment" rows="4" cols="50" placeholder="Bemerkungen hier einfügen"></textarea>
             <br>
