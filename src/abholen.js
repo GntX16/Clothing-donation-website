@@ -20,29 +20,32 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("pruefen").onclick = function () {
   const kundePlz = document.getElementById("plz").value;
   if (kundePlz == 20) {
-    //zeigt das zweite Formular an Quelle: Github Copilot
-    document.getElementById("detailsForm").style.display = "block";
-    //Verschönerung: buton und PLZ-Feld deaktivieren
-    document.getElementById("pruefen").disabled = true;
+    document.getElementById("detailsForm").style.display = "block"; //zeigt das zweite Formular an Quelle
+    document.getElementById("pruefen").disabled = true; //Verschönerung: buton und PLZ-Feld deaktivieren
     document.getElementById("plz").disabled = true;
+
   } else if (kundePlz == 25) {
     document.getElementById("detailsForm").style.display = "block";
     document.getElementById("pruefen").disabled = true;
     document.getElementById("plz").disabled = true;
+
   } else if (kundePlz == 13) {
     document.getElementById("detailsForm").style.display = "block";
     document.getElementById("pruefen").disabled = true;
     document.getElementById("plz").disabled = true;
+
   } else if (kundePlz == 55) {
     document.getElementById("detailsForm").style.display = "block";
     document.getElementById("pruefen").disabled = true;
     document.getElementById("plz").disabled = true;
+
   } else if (kundePlz == 84) {
     document.getElementById("detailsForm").style.display = "block";
     document.getElementById("pruefen").disabled = true;
     document.getElementById("plz").disabled = true;
+
   } else {
-    swal({
+    swal({ //Einsatz SweetAlert für Mitteilung
       text: "Leider ist keine Geschäftsstelle in der Nähe Ihrer eingegebenen Adresse :(",
       icon: "error",
       }
@@ -59,7 +62,7 @@ document.getElementById("bestaetigen").onclick = function () {
   const adresse = document.querySelector('#detailsForm input[type="text"]').value;
   //Kleidungsauswahl
   const kleidung = Array.from(
-    document.querySelectorAll('#detailsForm input[type="checkbox"]:checked')).map((cb) => cb.value).join(", "); //Zeile aus Github Copilot übernommen
+    document.querySelectorAll('#detailsForm input[type="checkbox"]:checked')).map((cb) => cb.value).join(", "); //Zeile aus ChatGPT übernommen
   //Kriesengebiet
   const krisengebiet = document.querySelector("#detailsForm select").value;
   //bemerkung
