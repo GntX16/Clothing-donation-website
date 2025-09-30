@@ -1,4 +1,4 @@
-# 👕 Clothing Donation Website
+# 👕 Spendeverein Himmelsterne (Webanwendung)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
@@ -6,57 +6,20 @@
 
 ---
 
+## 🌱 Motivation
+
+Dieses Projekt wurde mit dem Ziel entwickelt, einen Beitrag zur Nachhaltigkeit und sozialen Gerechtigkeit zu leisten. Ebenfalls dient es als eine Klausurersatzleistung und als Stärkung meines Lebenslaufs.
+
+---
+
 ## 🌍 Übersicht
+Willkommen bei den Himmelsternen :)
 
-Willkommen bei der **Clothing Donation Website**!  
-Diese Webanwendung ermöglicht es Nutzer*innen, Kleiderspenden ganz einfach online zu organisieren – sei es durch Abgabe in einer Geschäftsstelle oder durch die bequeme Abholung direkt vor Ort. Ziel ist es, Ressourcen zu schonen, Nachhaltigkeit zu fördern und soziale Gerechtigkeit zu unterstützen.
+Diese Webanwendung macht es leicht, Kleidung zu spenden und so gemeinsam Gutes zu tun, egal ob du deine alten Sachen direkt abgeben oder bequem abholen lassen möchtest. Unser Ziel ist es, nachhaltigen Konsum zu fördern, Ressourcen zu schonen und Menschen zu unterstützen, die Hilfe brauchen.
 
----
+Du findest hier eine moderne, übersichtliche und einfach zu bedienende Plattform, die auf vielen Geräten funktioniert. Mit wenigen Klicks kannst du aktiv werden und einen Beitrag für Umwelt und Gesellschaft leisten.  
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="images/screenshot-home.png" alt="Startseite" width="70%" />
-  <br>
-  <em>Abb. 1: Moderne und übersichtliche Startseite</em>
-</p>
-
-<p align="center">
-  <img src="images/screenshot-form.png" alt="Spendenformular" width="70%" />
-  <br>
-  <em>Abb. 2: Spendenformular mit Auswahl für Abholung oder Abgabe</em>
-</p>
-
-<p align="center">
-  <img src="images/screenshot-success.png" alt="Erfolgsmeldung" width="60%" />
-  <br>
-  <em>Abb. 3: Interaktive Erfolgsmeldung mit SweetAlert</em>
-</p>
-
----
-
-## 🚀 Features
-
-- **Benutzerfreundliches Spendenformular**  
-  Spenden abgeben oder abholen lassen – abhängig vom Wohnort und Wunsch des Nutzers.
-- **Responsives Design**  
-  Optimale Darstellung auf Desktop, Tablet und Smartphone dank [Bootstrap](https://getbootstrap.com/).
-- **Barrierefreiheit**  
-  Klare Strukturen, hohe Kontraste und semantische Elemente.
-- **Interaktive Feedbacks**  
-  Ansprechende Pop-ups mit [SweetAlert](https://sweetalert2.github.io/).
-- **Admin-Bereich**  
-  Übersicht über eingegangene Spenden (optional).
-- **Nachhaltigkeit & Soziales**  
-  Förderung von Umweltschutz und Unterstützung Bedürftiger.
-
----
-
-## 🛠️ Technologie-Stack
-
-- **HTML5, CSS3, JavaScript**
-- [Bootstrap](https://getbootstrap.com/) (CDN)
-- [SweetAlert2](https://sweetalert2.github.io/) (CDN)
+**Mach mit und werde Teil der Lösung – jede Spende zählt!**
 
 ---
 
@@ -69,8 +32,22 @@ Diese Webanwendung ermöglicht es Nutzer*innen, Kleiderspenden ganz einfach onli
 2. **Im Webbrowser öffnen**  
    Öffne die Datei `index.html` in deinem bevorzugten Browser.
 
-3. **(Optional) Eigene Anpassungen**  
-   Passe die Dateien im Ordner `images/` oder im Stylesheet nach deinen Wünschen an.
+3. **Eigene Anpassungen**
+
+---
+
+## 🚀 Features
+
+- **Benutzerfreundliches Spendenformular**  
+  Spenden abgeben oder abholen lassen, abhängig vom Wohnort und Wunsch des Nutzers.
+- **Responsives Design**  
+  Optimale Darstellung auf Desktop, Tablet und Smartphone dank [Bootstrap](https://getbootstrap.com/).
+- **Barrierefreiheit**  
+  Klare Strukturen, hohe Kontraste und semantische Elemente.
+- **Interaktive Feedbacks**  
+  Ansprechende Pop-ups mit [SweetAlert](https://sweetalert2.github.io/).
+- **Nachhaltigkeit & Soziales**  
+  Förderung von Umweltschutz und Unterstützung Bedürftiger.
 
 ---
 
@@ -105,12 +82,36 @@ Clothing-donation-website/
 
 ---
 
-## 📚 Lizenz
+## 📸 Screenshots
 
-Dieses Projekt steht unter der [MIT Lizenz](LICENSE).
+<p align="center">
+  <img width="1904" height="903" alt="grafik" src="https://github.com/user-attachments/assets/5941f89d-a95e-43ed-bdfb-42c5d9289740" />
+  <br>
+  <em>Abb. 1: Moderne und übersichtliche Startseite</em>
+</p>
+
+<p align="center">
+  <img width="1899" height="950" alt="grafik" src="https://github.com/user-attachments/assets/ce8c5873-55a4-4cf0-b4fa-0e670fab8cb5" />
+  <br>
+  <em>Abb. 2: Spendenformular</em>
+</p>
+
+<p align="center">
+  <img width="955" height="656" alt="grafik" src="https://github.com/user-attachments/assets/767cdf2f-ceec-4413-abb7-ce449e33262b" />
+  <br>
+  <em>Abb. 3: Interaktive Erfolgsmeldung mit SweetAlert</em>
+</p>
 
 ---
 
-## 🌱 Motivation
+## 🛠️ Technologie-Stack
 
-Dieses Projekt wurde mit dem Ziel entwickelt, einen Beitrag zur Nachhaltigkeit und sozialen Gerechtigkeit zu leisten. Ebenfalls dient es als eine Klausurersatzleistung.
+- **HTML5, CSS3, JavaScript**
+- [Bootstrap](https://getbootstrap.com/) (CDN)
+- [SweetAlert2](https://sweetalert2.github.io/) (CDN)
+
+---
+
+## 📚 Lizenz
+
+Dieses Projekt steht unter der [MIT Lizenz](LICENSE).
